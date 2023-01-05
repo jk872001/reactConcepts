@@ -1,0 +1,12 @@
+7.What is difference between react.development.js and react.production.js files via CDN?
+react.development.js and react.production.js are two different versions of the React library that are optimized for different environments.
+
+The react.development.js file is the development version of the React library, and it is intended to be used during the development of a web application. It includes helpful debugging tools and warnings that can help developers identify issues with their code.
+
+The react.production.js file is the production version of the React library, and it is intended to be used when deploying a web application to production. It has been optimized for performance and does not include the debugging tools and warnings that are included in the development version.
+
+You would use the react.development.js file when working on a new application or making changes to an existing application, and you would use the react.production.js file when deploying the application to production.
+
+Both versions of the React library can be loaded via CDN by including a <script> tag in the HTML of a web page. For example:
+<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>

@@ -1,0 +1,4 @@
+4.Why is React known as React?
+React is known as React because it was designed to be a declarative, efficient, and flexible JavaScript library for building user interfaces. The name "React" is an abbreviation of "responsive", which refers to the way that React allows developers to build applications that are responsive and can change and adapt based on user interactions.
+
+React was created by Facebook in 2013 as a way to build more interactive and efficient user interfaces for web applications. It was designed to be a lightweight and modular library that could be easily integrated into a variety of different projects. Since its release, React has become one of the most popular JavaScript libraries for building user interfaces and is used by companies like Airbnb, Netflix, and Twitter to build their web applications.

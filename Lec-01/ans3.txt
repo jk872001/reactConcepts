@@ -1,0 +1,16 @@
+3.What is CDN? Why do we use it?
+A content delivery network (CDN) is a system of distributed servers that are used to deliver web content to users based on their geographic location. CDNs are commonly used in programming to improve the performance, availability, and security of a website.
+
+CDNs work by storing copies of static content, such as images, CSS files, and JavaScript files, on servers that are located in multiple geographic locations. When a user requests content from a website, the CDN will redirect the request to the server that is closest to the user, which helps to improve the speed of the website by reducing the distance that the content has to travel.
+
+There are several reasons why CDNs are used in programming:-
+
+Improved performance: CDNs can improve the performance of a website by reducing the time it takes for the content to reach the user.
+
+Increased availability: CDNs can help to improve the availability of a website by serving content from multiple locations. If one CDN server goes down, the others can still serve the content, which helps to keep the website available to users.
+
+Better security: CDNs can help to protect a website from attacks by providing features like DDoS protection and web application firewall (WAF) services.
+
+Reduced load on the origin server: CDNs can take some of the load off of the origin server by caching and serving content, which can help to reduce the risk of the server becoming overloaded.
+
+Reduced bandwidth costs: CDNs can help to reduce the amount of bandwidth required by the origin server by caching and serving content, which can help to reduce hosting costs.

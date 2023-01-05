@@ -1,0 +1,9 @@
+5.What is crossorigin in script tag?
+The crossorigin attribute is used in the <script> tag to specify how a web browser should handle cross-origin requests for the script. Cross-origin requests are requests for resources that are served from a different domain than the current page.
+
+The crossorigin attribute can take one of two values: anonymous or use-credentials. If the value is set to anonymous, the browser will allow the script to be loaded and will not send any credentials (such as cookies or HTTP authentication) with the request. If the value is set to use-credentials, the browser will send credentials with the request.
+
+The crossorigin attribute is used to allow web applications to access resources from other domains in a secure way. It is especially useful when loading scripts from a CDN, as it allows the browser to properly handle the script's loading and execution.For example:-
+<script src="https://example.com/script.js" crossorigin="anonymous"></script>
+
+This <script> tag specifies that the script should be loaded from the domain "example.com", and that no credentials should be sent with the request
