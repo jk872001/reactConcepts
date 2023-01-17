@@ -1,0 +1,16 @@
+2.Superpowers of jsx?
+JSX has several "superpowers" that make it a powerful tool for building user interfaces:
+
+Componentization: JSX allows you to define reusable components that can be rendered multiple times with different props. This makes it easy to build complex UIs by breaking them down into small, composable parts.
+
+Declarative UI: Because JSX is based on a declarative syntax, it makes it easy to understand the structure of a UI and how it will look when it's rendered. This can make it easier to reason about the code and catch errors.
+
+Virtual DOM: When used in conjunction with a library like React, JSX takes advantage of the virtual DOM, which helps to optimize the performance of the application by only re-rendering the components that have changed.
+
+Interoperability: JSX can be used alongside JavaScript code, allowing you to create powerful interactions and dynamic UIs. This can be done by passing functions and state between JSX components.
+
+Extensibility: JSX can be extended and customized to meet the specific needs of your application. For example, you can create custom elements and attributes in JSX to create more specialized components that can be reused across your application.
+
+Easy to Learn: Because JSX looks similar to HTML, it is easy to learn and understand, especially for developers who are familiar with HTML.
+
+In summary, JSX is a powerful and flexible tool that makes it easy to build and maintain complex UIs. It allows you to create reusable components, reason about the structure of a UI, optimize performance and create powerful interactions through interoperability and extensibility.

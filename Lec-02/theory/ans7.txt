@@ -1,0 +1,16 @@
+7.What is Hot Module Replacement?
+Hot Module Replacement (HMR) is a feature that allows you to update parts of your application "on the fly" without having to refresh the page. This can be a huge time-saver during development, because it allows you to make changes to your code and see the results immediately, without having to wait for a full page reload.
+
+To use Hot Module Replacement, you need to use a module bundler (such as Webpack) that supports HMR, and include the HMR runtime in your application. When you make a change to your code, the module bundler will send the updated module to the HMR runtime, which will then update the corresponding part of the application in the browser.
+
+For example, consider the following code:-
+if (module.hot) {
+  module.hot.accept('./print.js', function() {
+    console.log('Accepting the updated printMe module!');
+    printMe();
+  })
+}
+
+In this code, we are using the module.hot object to check if HMR is enabled, and if it is, we are using the accept method to tell the HMR runtime that we want to accept updates to the ./print.js module. When the ./print.js module is updated, the HMR runtime will execute the callback function, which in this case just logs a message and calls the printMe function.
+
+HMR is a powerful feature that can greatly speed up your development workflow. However, it is important to note that HMR is mainly intended for development, and is not recommended for production use. In production, you should always perform a full page reload to ensure that the entire application is updated and in a consistent state.

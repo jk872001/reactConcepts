@@ -1,0 +1,11 @@
+12.What is `node_modules` ? Is it a good idea to push that on git?
+node_modules is a directory that is created by npm (the package manager for Node.js) when you install packages in your project. It contains the package files and any dependencies of the packages that you have installed.
+
+It is generally not a good idea to commit the node_modules directory to version control (such as Git) for a few reasons:
+The node_modules directory can be very large, as it can contain hundreds or even thousands of packages and their dependencies. This can make your repository very large, and slow down version control operations.
+
+The node_modules directory is specific to your project, and the packages and dependencies that it contains can be installed using the package.json file and the npm install command. This means that there is usually no need to track the node_modules directory in version control, as it can be regenerated as needed.
+
+The node_modules directory can contain platform-specific code and compiled binaries, which may not be compatible with other platforms. This can lead to issues when other developers try to clone and build your project on different platforms.
+
+Instead of committing the node_modules directory to version control, it is generally a good idea to include the package.json and package-lock.json files in your repository, and let other developers install the dependencies using npm install. This will ensure that the dependencies of your project are tracked and can be easily reproduced by other developers, without having to commit the large and potentially platform-specific node_modules directory.

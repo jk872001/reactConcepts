@@ -1,0 +1,8 @@
+11.Why should I not modify `package-lock.json`?
+It is generally not recommended to modify the package-lock.json file manually, as it is intended to be managed automatically by npm. The package-lock.json file is generated automatically by npm when you install packages in your project, and it lists the exact versions of each package that was installed, along with a hash of the package's contents.
+
+The purpose of the package-lock.json file is to ensure that the dependencies of a project are installed consistently across different machines and environments. It allows you to pin the dependencies of your project to specific versions, and ensures that the exact same versions are installed when someone else installs your project.
+
+If you modify the package-lock.json file manually, you may end up with inconsistencies in the dependencies that are installed, which can lead to issues when you or someone else tries to build or run your project.
+
+There are a few situations where you might need to modify the package-lock.json file. For example, if you are using a private registry or a specific version of a package that is not available in the npm registry, you might need to manually add the package to the package-lock.json file. However, in general, you should try to avoid modifying the package-lock.json file manually, and let npm manage it for you.

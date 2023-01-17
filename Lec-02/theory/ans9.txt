@@ -1,0 +1,24 @@
+9.What is `.gitignore`? What should we add and not add into it?
+.gitignore is a file that is used to tell Git which files or directories should be ignored when making commits. This is useful because it allows you to exclude files that are not relevant to your project, or that should not be tracked by Git, such as build artifacts or temporary files.
+
+To create a .gitignore file, you can create a new file in your project directory called .gitignore, and then add the names of the files or directories that you want to ignore, one per line. For example:
+# Ignore node_modules directory
+node_modules/
+
+# Ignore build artifacts
+build/
+
+# Ignore temp files
+*.tmp
+
+There are no hard and fast rules for what should and should not be added to a .gitignore file, as it will depend on your specific project and workflow. However, here are a few general guidelines:
+
+Build artifacts: It is generally a good idea to ignore build artifacts, such as compiled code or minified files, as these can usually be regenerated from the source code.
+
+Temporary files: Files that are created by your text editor or operating system, such as *.swp files or *.DS_Store, should generally be ignored.
+
+Sensitive information: You should also be careful to not commit sensitive information, such as passwords or private keys, to your repository. If you need to include such information in your project, you can use a tool like git-crypt to encrypt it.
+
+Third-party libraries: If you are using a package manager like npm or yarn, you should generally ignore the node_modules directory, as the packages in this directory can be installed using the package manager.
+
+It is generally a good idea to keep your .gitignore file as minimal as possible, and only ignore files that are not essential to your project. This will help ensure that you are tracking all the important files in your project, and make it easier to collaborate with other developers.

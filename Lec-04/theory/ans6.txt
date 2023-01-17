@@ -1,0 +1,8 @@
+6.What is reconcilition in react?
+Reconciliation is the process by which React updates the actual DOM to reflect the changes made to the virtual DOM. It is a key concept in React, and it is how React ensures that the UI is always in sync with the current state of the application.
+
+When a component's props or state change, React will re-render the component and its children. During this process, React will compare the virtual DOM with the actual DOM, and it will identify the differences between the two. It will then make the necessary updates to the actual DOM, updating only the elements that have changed, rather than re-rendering the entire component tree.
+
+React uses a heuristic approach for the reconciliation process, which is based on the assumption that two elements with the same type and key are the same element. This approach allows React to make updates to the actual DOM more efficiently, by only updating the elements that have changed, rather than re-rendering the entire component tree.
+
+Overall, Reconciliation is a key concept in React and it is one of the main reasons why React is considered to be a fast and performant library for building web applications.

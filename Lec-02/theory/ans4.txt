@@ -1,0 +1,17 @@
+4.What is `npx`?
+npx is a tool that is included with npm, the package manager for JavaScript. It allows you to execute packages from the npm registry, without having to install them globally on your machine.
+
+For example, if you want to run the create-react-app tool to create a new React project, you can use the following command:
+npx create-react-app my-project
+
+npx is a tool that is included with npm, the package manager for JavaScript. It allows you to execute packages from the npm registry, without having to install them globally on your machine.
+
+For example, if you want to run the create-react-app tool to create a new React project, you can use the following command:
+
+Copy code
+npx create-react-app my-project
+This will download and execute the create-react-app package from the npm registry, and create a new React project in the my-project directory.
+
+The advantage of using npx is that you don't have to install the package globally on your machine, which can save space and keep your global npm packages list clean. npx will automatically install the package you want to use, execute it, and then remove it when it is done.
+
+npx is especially useful for running one-off scripts or trying out new tools that you don't need to use regularly.

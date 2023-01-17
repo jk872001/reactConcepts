@@ -1,0 +1,46 @@
+10.- What is the difference between `package.json` and `package-lock.json`?
+package.json is a file that is used to manage the dependencies of a Node.js project. It includes information about the project, such as the name, version, and description, as well as a list of the dependencies that the project needs to function.
+
+package-lock.json, on the other hand, is a file that is used to lock the dependencies of a project to a specific version. It is generated automatically by npm when you install packages in your project, and it lists the exact versions of each package that was installed, along with a hash of the package's contents.
+
+The main difference between package.json and package-lock.json is that package.json specifies the dependencies that your project needs, while package-lock.json specifies the exact versions of those dependencies that are installed in your project.
+
+For example, consider the following package.json file:
+{
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
+
+package.json is a file that is used to manage the dependencies of a Node.js project. It includes information about the project, such as the name, version, and description, as well as a list of the dependencies that the project needs to function.
+
+package-lock.json, on the other hand, is a file that is used to lock the dependencies of a project to a specific version. It is generated automatically by npm when you install packages in your project, and it lists the exact versions of each package that was installed, along with a hash of the package's contents.
+
+The main difference between package.json and package-lock.json is that package.json specifies the dependencies that your project needs, while package-lock.json specifies the exact versions of those dependencies that are installed in your project.
+
+For example, consider the following package.json file:
+
+Copy code
+{
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
+In this example, the lodash package is listed as a dependency with a version range of ^4.17.20. This means that any version of lodash that is compatible with 4.17.20 can be installed, such as 4.17.21 or 4.18.0.
+
+When you run npm install, npm will resolve the dependencies in your package.json file, and install the specific versions of the packages that it determines are needed. It will then generate a package-lock.json file that looks something like this:
+{
+  "dependencies": {
+    "lodash": {
+      "version": "4.17.21",
+      "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz",
+      "integrity": "sha512-3zLq6+rchg3qZd5HGMcJbZaDdR+Q7QaJ+APuV9yJYWYFv1+l5lhZQ2weZCyTP5G5+5y5JLlAKc5yWY/e0INmew=="
+    }
+  }
+}
+
+In this package-lock.json file, you can see that the lodash package was installed with version 4.17.21, and that it was downloaded from a specific URL and has a specific integrity hash.
+
+The package-lock.json file is used to ensure that the dependencies of a project are installed consistently across different machines and environments. It allows you to pin the dependencies of your project to specific versions, and ensures that the exact same versions are installed when someone else installs your project.
+
+In general, you should commit both the package.json and package-lock.json files to your version control system (such as Git) when working on a Node.js project. This will ensure that the dependencies of your project are tracked and can be easily reproduced by other developers.

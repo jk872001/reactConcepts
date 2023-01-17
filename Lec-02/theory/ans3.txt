@@ -1,0 +1,7 @@
+3.What is `.parcel-cache`?
+.parcel-cache is a directory that is created and used by the module bundler Parcel to store cached files. When you build a project with Parcel, it will cache the transformed files in the .parcel-cache directory to speed up future builds. If you delete the .parcel-cache directory, Parcel will recreate it and rebuild all the cached files from scratch.
+
+The .parcel-cache directory is usually located in the root directory of your project, and it is usually added to the .gitignore file so that it is not checked into version control. This is because the cache is not essential to the project, and it can be regenerated as needed.
+
+In general, you should not need to worry about the .parcel-cache directory unless you are having issues with the build process. In that case, you might try deleting the .parcel-cache directory and rebuilding your project to see if that helps.
+

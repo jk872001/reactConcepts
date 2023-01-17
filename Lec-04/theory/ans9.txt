@@ -1,0 +1,13 @@
+9.Can we use index as key in react?
+Yes we can use but it is not recommended.
+
+It is generally not recommended to use the index of an item as its key in React when rendering a list of items.
+
+Using the index as a key can lead to unexpected behavior when the list is re-ordered or items are added or removed, because the index is not a stable identifier. When items are added or removed, the index of the remaining items changes, which can cause React to re-render the entire list instead of just updating the specific items that have changed.
+
+It's better to use a unique identifier that is associated with each item, such as an ID from the server-side data, as the key. This ensures that React can properly track and update the items in the list, even if their order changes.
+
+However, there is an exception to this rule, When the list is guaranteed to not change its order or size, it's safe to use indexes as keys.
+In this case, when the list is small, and the number of re-renders doesn't have a significant impact on performance.
+
+In summary, using the index as a key is not the best practice and should be avoided, if possible, use unique identifier as key for each element in list.

@@ -1,0 +1,11 @@
+2.What is `Parcel/Webpack`? Why do we need it?
+Parcel and Webpack are both module bundlers for JavaScript. A module bundler is a tool that takes the various modules in your code, and combines them into a single file (or a few files) that can be run in the browser. This is useful because it allows you to split your code up into smaller, more focused files that are easier to write and maintain, and then package them up for use in the browser.
+
+Module bundlers like Parcel and Webpack also have a lot of additional features, such as:
+1.Transpiling modern JavaScript code to be compatible with older browsers
+2.Transforming JSX (the syntax used in React components) into plain JavaScript
+3.Optimizing code for production by minifying and tree-shaking (removing unused code)
+4.Adding support for CSS and other asset types (e.g. images, fonts)
+5.Providing a development server with hot reloading for faster development
+
+In short, module bundlers like Parcel and Webpack are essential tools for building modern JavaScript applications. They help you organize your code, optimize it for production, and provide a lot of useful development tools.

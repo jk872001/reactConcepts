@@ -1,0 +1,2 @@
+1.Is JSX mandatory for react?
+No,it's not necessary we can create the layout using React.createElement as well but as the html structure increases it becomes very complex to use React.createElement so we need to use jsx to take full advantage of react library.

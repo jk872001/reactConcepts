@@ -1,0 +1,10 @@
+8.Why and when we need keys in react?
+React is not able to differentiate between the children divs while rendering a component if we add a new div so at that time we have to use keys in react.
+
+In React, keys are used to help identify which items in a list have changed, been added, or been removed. They are important when working with dynamic or real-time data, such as a list of items that are fetched from a server and then displayed in a list on the front-end.
+
+When a list is re-rendered, React uses the keys to determine which items have changed and which items are new, allowing it to make more efficient updates to the DOM. This is because React uses a virtual DOM, which is a representation of the actual DOM, to determine the most efficient way to update the actual DOM.
+
+It is a good practice to give each item in a list a unique key, such as an ID from the server-side data, to ensure that React can properly track and update the items in the list.
+
+Also, When we are working with dynamic list, we need to assign unique key to each element to make react understand which element is added and which one is removed. Without unique key, react might re-render the entire list instead of updating the specific elements.

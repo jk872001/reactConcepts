@@ -1,0 +1,24 @@
+1.What is JSX?
+JSX is html like syntax which we can write inside the javascipt.
+
+JSX is a syntax extension for JavaScript. It is used to describe the structure of UI elements in a JavaScript file, in a way that looks similar to HTML. It allows you to build reusable components that can be rendered to the DOM using a library such as React.
+
+Here is an example of a simple JSX component:
+import React from 'react';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Hello, World!</h1>
+      <p>This is a simple example of a JSX component.</p>
+    </div>
+  );
+};
+
+export default MyComponent;
+
+In this example, the MyComponent function returns a JSX element that describes a div element with a h1 and a p element inside it. When this component is rendered, it will create the corresponding DOM nodes and add the text "Hello, World!" and "This is a simple example of a JSX component" to them.
+
+It's worth mentioning that JSX syntax is not supported by vanilla javascript, It needs to be transpiled to plain javascript so browser could understand it, this is where tools like babel comes in, which can transpile JSX to JavaScript code.
+
+In summary, JSX is a way of describing UI elements and components in a way that looks similar to HTML, but can be used in JavaScript code. It is most commonly used with React.

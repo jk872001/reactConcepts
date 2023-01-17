@@ -1,0 +1,8 @@
+1.What is `NPM`?
+npm (short for Node Package Manager) is a package manager for the JavaScript programming language. It is the default package manager for the JavaScript runtime environment Node.js. npm helps manage and share the packages (or libraries) that you use in your projects, and makes it easy to install and update packages from the npm registry, which is a large public database of open-source JavaScript packages.
+
+Using npm, you can install packages from the command line, and manage the dependencies in your project. npm also helps you automate tasks like testing and building your code, and can run scripts defined in the package.json file in your project.
+
+For example, you can use npm to install the React library in your project with the following command:
+npm install react
+npm update react

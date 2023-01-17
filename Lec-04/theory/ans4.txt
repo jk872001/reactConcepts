@@ -1,0 +1,26 @@
+4.What is <React.Fragment></React.Fragment> & <></> ?
+we use react.fragment to avoid an extra div in our html 
+
+<React.Fragment></React.Fragment> is a way to group a set of React elements together without adding an extra node to the DOM. It allows you to return multiple elements from a component's render method without wrapping them in an additional element.
+
+For example, this code will create two divs in the DOM:
+<div>
+  <div>First</div>
+  <div>Second</div>
+</div>
+
+Instead of using a div to wrap the two inner divs, you could use a fragment to group them together and it will not add a div to the DOM.
+
+<React.Fragment>
+  <div>First</div>
+  <div>Second</div>
+</React.Fragment>
+
+<></> is a shorthand for <React.Fragment> introduced in React 16.2, it's a shorthand for the same functionality.
+
+<>
+  <div>First</div>
+  <div>Second</div>
+</>
+
+It's similar to the above example, but it's a shorter way of writing it.

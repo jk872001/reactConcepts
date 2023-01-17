@@ -1,0 +1,19 @@
+6.What is Tree Shaking?
+Tree shaking is a term used in the context of JavaScript module bundlers (such as Webpack and Rollup) to describe the process of removing unused code from your final bundle. The term "tree shaking" comes from the idea of shaking a tree to remove the dead leaves, leaving only the healthy branches.
+
+In the context of JavaScript bundlers, tree shaking works by analyzing the import statements in your code, and only including the exports that are actually used. This can help reduce the size of your final bundle, and improve performance by eliminating unnecessary code.
+
+For example, consider the following code:
+import { map, filter } from 'lodash';
+
+const numbers = [1, 2, 3, 4, 5];
+
+const evenNumbers = filter(numbers, n => n % 2 === 0);
+
+console.log(evenNumbers); // [2, 4]
+
+In this example, we are only using the filter function from the lodash library, so a tree-shaking bundler would only include the filter function in the final bundle, and exclude the rest of the lodash library that we are not using.
+
+Tree shaking is most effective when used in combination with a module system (such as ES6 modules) that allows the bundler to statically analyze the dependencies in your code. This is because the bundler can then determine which exports are used, and which are not, without having to execute the code.
+
+Tree shaking can help reduce the size of your final bundle, and improve the performance of your application by eliminating unnecessary code. However, it is important to note that tree shaking is only effective for removing unused exports from third-party libraries, and has no effect on your own code.

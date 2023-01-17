@@ -1,0 +1,10 @@
+7.What is react fiber?
+React Fiber is a new reconciliation algorithm that was introduced in React 16. It is a complete rewrite of the React's core algorithm, with the goal of making React more efficient and flexible, particularly when dealing with large or complex applications.
+
+One of the main features of React Fiber is its ability to split rendering work into smaller chunks, allowing React to prioritize and schedule different parts of the rendering process. This allows React to more efficiently update the UI, by focusing on the most important updates first, and by allowing other updates to be handled in the background. This can result in improved performance, particularly when dealing with large or complex UIs, and allows React to more efficiently handle animations, layout, and other performance-critical tasks.
+
+Fiber also introduced a new concept called "time slicing" which allows React to split the work into small chunks and schedule them across multiple frames. This allows React to spread the work out over time, rather than trying to do it all at once, which can lead to a more responsive and smoother user experience.
+
+React Fiber also provides a more powerful and flexible way of handling errors, and it includes new features such as error boundaries, and the ability to resume rendering after an error.
+
+Overall, React Fiber is a significant improvement over the previous version of React and it provides more efficient and flexible ways to handle the UI updates, making React more suitable for building large and complex applications.

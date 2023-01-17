@@ -1,0 +1,18 @@
+11.What is Config Driven UI?
+
+"Config Driven UI" refers to a design pattern in which the layout, structure, and behavior of a user interface (UI) are determined by a configuration file, rather than hard-coded into the application's code.
+
+In this approach, the UI is built using a set of reusable components, and the configuration file specifies how these components should be configured and arranged to create the desired UI. The configuration file can be written in a variety of formats, such as JSON, YAML, or XML, and it can be easily edited or changed to update the UI without modifying the application's code.
+This pattern has several benefits:
+
+Separation of concerns: By separating the UI configuration from the application's code, developers can focus on implementing the business logic of the application, while designers or product managers can focus on the look and feel of the UI.
+
+Flexibility: With a config-driven approach, it's easy to create different versions of the UI for different use cases, or to experiment with different design options without affecting the underlying code.
+
+Reusability: By building the UI with a set of reusable components, it's easy to reuse those components in other parts of the application or in other applications.
+
+Testability: With a config-driven approach, it's easy to test different variations of the UI, by providing different configuration files, without having to change the code.
+
+Modularity: With config-driven approach, the UI can be split into smaller, more manageable chunks of code, making it easier to maintain, and also making it more scalable as the application grows.
+
+The Config Driven UI pattern is widely used in modern web development frameworks such as React and Angular, where the configuration is used to define the components tree and the properties passed to each component.

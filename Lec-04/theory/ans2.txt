@@ -1,0 +1,2 @@
+2.IS es6 mandatory for react?
+No, ES6 is not mandatory for React. React can be used with any version of JavaScript, including ES5. However, many developers prefer to use ES6 when working with React because it includes features such as arrow functions, classes, and destructuring that make it easier to write and maintain React code. Additionally, many tutorials and examples for React are written using ES6, so it can be easier to follow along if you are familiar with ES6 syntax.

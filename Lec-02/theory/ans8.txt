@@ -1,0 +1,13 @@
+8.List down your favourite 5 superpowers of Parcel and describe any 3 of them in your
+own words?
+However, here are five notable features of Parcel that may be considered "superpowers" by some users:
+
+Zero configuration: One of the main advantages of Parcel is that it requires zero configuration to get started. You can simply run parcel index.html and it will automatically figure out how to build your project, based on the dependencies and asset files in your project. This makes it very easy to get started with Parcel, and reduces the time spent on setup and configuration.
+
+Fast build times: Parcel is optimized for fast build times, and can rebuild your project very quickly, even for large projects with many dependencies. This makes it easier to iterate on your code, and get feedback on your changes more quickly.
+
+Code splitting: Parcel can automatically split your code into smaller bundles that are loaded on demand, based on the import statements in your code. This can help improve the performance of your application by reducing the initial load time, and only loading the code that is actually needed.
+
+Asset transformation: Parcel can automatically transform a wide range of asset types, such as CSS, HTML, images, and fonts, using plugins called "loaders". This allows you to use modern asset formats and techniques, such as Sass for CSS or JSX for HTML, and have them automatically transformed into plain JavaScript, CSS, and HTML that can be used in the browser.
+
+Development server: Parcel includes a development server with hot module replacement (HMR) support, which allows you to make changes to your code and see the results immediately, without having to refresh the page. This can greatly speed up your development workflow, and make it easier to debug and test your code.

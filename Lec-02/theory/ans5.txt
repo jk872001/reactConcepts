@@ -1,0 +1,16 @@
+5.What is difference between `dependencies` vs `devDependencies`?
+In a package.json file, the dependencies and devDependencies fields are used to specify the packages that your project depends on. The main difference between them is that dependencies are packages that are needed in production, while devDependencies are only needed for development and testing.
+
+For example, if your project uses the React library in production, you would add it to the dependencies field like this:
+"dependencies": {
+  "react": "^16.13.1"
+}
+
+On the other hand, if you are using a testing framework like Jest for development and testing, but it is not needed in the production build of your project, you would add it to the devDependencies field like this:
+"devDependencies": {
+  "jest": "^26.4.2"
+}
+
+When you install the packages for your project using npm install, the packages listed in the dependencies field will be installed in the node_modules directory, while the packages listed in the devDependencies field will be installed with the --save-dev flag, which installs them in the node_modules directory, but marks them as development dependencies.
+
+The main reason for separating out development dependencies is to allow you to optimize the production build of your project. For example, you might want to exclude testing frameworks and other development tools from the production build to reduce the size of your final bundle.

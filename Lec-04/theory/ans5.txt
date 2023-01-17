@@ -1,0 +1,4 @@
+5.What is Virtual DOM?
+VD is the exact representation or copy of the real dom whenever there is any change in any node react compares the real dom with vd and re-render only the node where the changes occur .React use the reconcilation(diff algorithm) to perform this task.
+
+The Virtual DOM (Document Object Model) is a programming concept used in web development to improve the performance of web applications. It is a lightweight, in-memory representation of the actual DOM (Document Object Model) that is used to track changes made to the UI (user interface). When a change is made to the virtual DOM, it is compared to the actual DOM, and only the necessary changes are made to the actual DOM, making updates more efficient. This concept was popularized by libraries such as React.js, and it is now widely used in many other JavaScript libraries and frameworks.
