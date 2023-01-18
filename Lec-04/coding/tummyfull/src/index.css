@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.restro-card{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  row-gap: 10px;
+}
+.App{
+  display: flex;
+  gap: 10px;
+}
