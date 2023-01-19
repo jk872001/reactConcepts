@@ -1,27 +1,15 @@
-import { restroList } from "./data"
+import React from "react";
+import Body from "./components/Body";
+
 
 function App() {
 return (
-    <div className="App">
-      {
-        restroList.map((restro) => {
-          return <Restrorant {...restro} />
-        }
-
-        )
-      }
-
-    </div>
+   <React.Fragment>
+     <Body/>
+   </React.Fragment>
   );
 }
 
 
-const Restrorant = ({ strCategoryThumb, strCategory }) => {
-  return (
-    <div className="restro-card">
-      <img width='200px' height='200px' src={strCategoryThumb} alt="food" />
-      <h1>{strCategory}</h1>
-    </div>
-  )
-}
+
 export default App;
