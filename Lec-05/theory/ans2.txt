@@ -1,0 +1,12 @@
+2.What is the importance of config.js file?
+A config.js file is a JavaScript file that contains configuration settings for a specific application or project. The file usually exports an object or a set of variables that can be imported and used by other parts of the codebase. The importance of a config.js file is that it allows for easy management of settings and variables that are used throughout the application.
+
+For example, a config.js file might contain settings for a database connection, API keys for third-party services, or application-specific constants. By keeping these settings in a single file, it allows for easy modification of these settings, without having to search through the entire codebase to find where they are used.
+
+In addition to that, it allows for easy switching between different environments (development, staging, production) by only changing the config file.
+It also allows for separating sensitive information such as secret keys or passwords from the rest of the codebase, which can help to improve security.
+
+In summary, a config.js file is important because it allows for easy management of settings and variables, and it promotes organization, maintainability, and security in an application.
+
+
+

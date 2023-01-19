@@ -1,0 +1,18 @@
+1.What is the difference b/w Named Export ,Default export & * as export?
+Named exports: multiple values can be exported from a module using the export keyword, followed by the variable name. These can be imported using the import keyword and the name of the variable in curly braces. For example, in the module "myModule", you can export multiple variables like this:
+export const myVariable1 = "value1";
+export const myVariable2 = "value2";
+and you can import them like this:
+import { myVariable1, myVariable2 } from "./myModule";
+
+import { myVariable1, myVariable2 } from "./myModule";
+Default exports: a module can also have a default export, which can be any single value or variable. A module can have only one default export. The default export can be imported using the import keyword, without curly braces. For example, in the module "myModule", you can export a default variable like this:
+export default "value1";
+and you can import it like this:
+import myVariable from "./myModule";
+
+* as exports: you can also import all exports of a module using the import * as syntax. This creates an object that contains all of the exports of the module. For example, in the module "myModule", you can import all exports like this:
+import * as myModule from "./myModule";
+and you can access the exports like this:
+console.log(myModule.myVariable1);
+console.log(myModule.myVariable2);

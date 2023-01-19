@@ -1,0 +1,17 @@
+3.What are React Hooks?
+React Hooks are a way to write functional components in React that can manage state and lifecycle methods. Prior to the introduction of Hooks in React 16.8, stateful logic had to be written in class components, which can make certain code patterns more complex and difficult to understand.
+
+Hooks allow you to use state and lifecycle methods in functional components by providing a set of built-in Hooks. Some of the most commonly used Hooks include:
+
+useState: Allows a functional component to have local state
+useEffect: Allows a functional component to handle side-effects, such as data fetching or subscription
+useContext: Allows a functional component to consume context
+Using Hooks can make your code more readable and easier to maintain, as well as allow you to share logic across multiple components.
+
+Hooks can also be used to write custom hooks, which allow you to extract component logic into reusable functions. This allows you to share logic across multiple components, making your code more maintainable and easier to test.
+
+In summary, React Hooks are a way to write functional components in React that can manage state and lifecycle methods, making your code more readable, easier to maintain, and allowing for share logic across multiple components.
+
+
+
+

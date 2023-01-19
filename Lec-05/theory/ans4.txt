@@ -1,0 +1,15 @@
+4.Why do we need a useState Hook?
+The useState Hook in React allows functional components to have local state, which is a way to store and manage data that is specific to a certain component.
+
+Prior to the introduction of Hooks, stateful logic had to be written in class components, which can make certain code patterns more complex and difficult to understand. With the useState Hook, you can add state to functional components, making your code more readable and easier to understand.
+
+useState Hook is a function that returns a state variable and a function to update it. It takes an initial state value as an argument. When the component re-renders, the state variable will be updated with the new value, and the component will re-render with the updated state.
+
+For example, if you have a counter component that increments and decrements a count, you could use the useState Hook to store the count in state.
+const [count, setCount] = useState(0);
+
+You can use the count variable to render the current count in the component, and the setCount function to update the count when the user clicks a button.
+<p>Count: {count}</p>
+<button onClick={() => setCount(count + 1)}>Increment</button>
+
+In summary, the useState Hook allows functional components to have local state, making it easier to manage and update data that is specific to a certain component. It allows for a more readable and maintainable code, and allows functional components to have similar capabilities as class components.
