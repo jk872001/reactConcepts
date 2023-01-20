@@ -1,41 +1,69 @@
-import React, { useState } from 'react'
-import { restroList } from "../data"
+import React, { useEffect, useState } from 'react'
+// import { restroList } from "../data"
 import Restraurant from './Restraurant'
-
+import Shimmer from './Shimmer';
 
 
 const Body = () => {
     // state variables
     const [searchText, setSearchText] = useState('');
-    const [restraurants, setRestraurants] = useState(restroList);
+    const [allrestraurants, setAllRestraurants] = useState([]);
+    const [filterrestraurants, setFilterRestraurants] = useState([]);
 
+
+
+    function handleKeyPress(event) {
+        if (event.key === 'Enter') {
+            handleSearch();
+        }
+      }
     // Search Functionality
     const handleSearch = () => {
+            //  console.log(filterrestraurants);
+        const searchData = allrestraurants.filter(restrorant => restrorant?.data?.name?.toLowerCase()?.includes(searchText?.toLowerCase()))
 
-        const searchData = restraurants.filter(restrorant => restrorant.strCategory.toLowerCase().includes(searchText.toLowerCase()))
-       
-        setRestraurants(searchData);
+        setFilterRestraurants(searchData);
     }
 
-    return (
+    // Fetching Api
+    useEffect(() => {
+        getRestaurantData();
+    }, []);
+
+    const getRestaurantData = async () => {
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING")
+        const json = await data.json();
+       
+        setAllRestraurants(json?.data?.cards[2]?.data?.data?.cards)
+        setFilterRestraurants(json?.data?.cards[2]?.data?.data?.cards)
+        // console.log(json.data.cards[2].data.data.cards);
+    }
+
+    return (allrestraurants?.length===0) ? <Shimmer/>: (
         <React.Fragment>
             <div>
-               
-                <input value={searchText} onChange={(e) => { setSearchText(e.target.value)
-                if(e.target.value==='')
-            {
-                setRestraurants(restroList)
-            } }} type="text" />
+
+                <input onKeyPress={handleKeyPress} value={searchText} onChange={(e) => {
+                    setSearchText(e.target.value)
+                    
+                    if (e.target.value === '') {
+                        setFilterRestraurants(allrestraurants)
+                    }
+                }} type="text" />
                 <button onClick={() => handleSearch()} >Search</button>
             </div>
-            <div className="body">
+            {
+                (filterrestraurants?.length===0) ? <h1>No Products Found</h1>:
+                <div className="body">
                 {
-                    restraurants.map((restro) => {
-                        return <Restraurant {...restro} key={restro.idCategory} />
+                    filterrestraurants.map((restro) => {
+                        return <Restraurant {...restro.data} key={restro.data.id} />
                     })
                 }
 
             </div>
+            }
+           
         </React.Fragment>
     )
 }
