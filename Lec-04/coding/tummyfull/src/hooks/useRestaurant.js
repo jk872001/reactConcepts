@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
-
+import { FETCH_RESTRO_MENU } from "../config"
 const useRestaurant = (resId) => {
     const [restaurant, setRestaurant] = useState({});
-     useEffect(() => {
+    useEffect(() => {
         getRestaurantMenu();
     },);
 
     const getRestaurantMenu = async () => {
-        const data = await fetch(`https://www.swiggy.com/dapi/menu/v4/full?lat=12.9351929&lng=77.62448069999999&menuId=${resId}`);
+        const data = await fetch(FETCH_RESTRO_MENU + resId);
         const json = await data.json();
 
         setRestaurant(json.data)

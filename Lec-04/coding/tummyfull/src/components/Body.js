@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
-// import { restroList } from "../data"
 import Restraurant from './Restraurant'
 import Shimmer from './Shimmer';
 import { filterData } from '../utils/helper';
-
+import {FETCH_RESTRO} from "../config"
 const Body = () => {
     // state variables
     const [searchText, setSearchText] = useState('');
@@ -32,7 +31,7 @@ const Body = () => {
     }, []);
 
     const getRestaurantData = async () => {
-        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING")
+        const data = await fetch(FETCH_RESTRO)
         const json = await data.json();
 
         setAllRestraurants(json?.data?.cards[2]?.data?.data?.cards)

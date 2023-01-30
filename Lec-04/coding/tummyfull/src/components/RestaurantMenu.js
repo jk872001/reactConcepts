@@ -8,7 +8,7 @@ const RestaurantMenu = () => {
     
   return (
     <div>
-    <img src={IMG_CDN_URL+restaurant.cloudinaryImageId} alt="" />
+    <img src={IMG_CDN_URL+restaurant.cloudinaryImageId} alt="img" />
       <h1>{restaurant.name}</h1>
     </div>
   )

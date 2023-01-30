@@ -10,7 +10,15 @@ import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import PageNotFound from "./pages/PageNotFound";
 import RestaurantMenu from "./components/RestaurantMenu";
+import useOnline from "./hooks/useOnline";
 function App() {
+
+ const isOnline=useOnline();
+
+ if(!isOnline)
+ {
+  return <h1>Offline! Please check your internet connection</h1>
+ }
   return (
     <React.Fragment>
 
