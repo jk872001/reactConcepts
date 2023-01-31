@@ -50,3 +50,13 @@ header button{
   cursor: pointer;
 
 }
+.restaurant-list{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.shimmer{
+  width:200px;
+  height: 200px;
+  background-color: rgb(198, 193, 193);
+}

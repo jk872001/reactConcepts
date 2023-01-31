@@ -2,10 +2,14 @@ import React from 'react'
 
 const Shimmer = () => {
   return (
-    <React.Fragment>
-      <h1>Shimmer Loading...</h1>
-    </React.Fragment>
-  )
-}
+    <div className="restaurant-list">
+      {Array(10)
+        .fill("")
+        .map((e, index) => (
+          <div key={index} className="shimmer"></div>
+        ))}
+    </div>
+  );
+};
 
-export default Shimmer
+export default Shimmer;
